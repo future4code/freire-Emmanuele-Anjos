@@ -25,6 +25,7 @@ console.log(roupa, respRoupa);
 console.log(dente, respDente);
 console.log(exercicio, respExercicio);
 
+
 // exercicio 3
 
 let a = 10;
@@ -33,3 +34,4 @@ c = b;
 b = a;
 a = c;
 console.log(a, b);
+
