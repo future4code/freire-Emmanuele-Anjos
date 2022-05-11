@@ -24,3 +24,14 @@ const respExercicio = "Sim";
 console.log(roupa, respRoupa);
 console.log(dente, respDente);
 console.log(exercicio, respExercicio);
+
+
+// exercicio 3
+
+let a = 10;
+let b = 25;
+c = b;
+b = a;
+a = c;
+console.log(a, b);
+
