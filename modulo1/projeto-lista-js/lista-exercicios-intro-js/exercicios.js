@@ -64,21 +64,32 @@ function imprimeInformacoesUsuario() {
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
+  const cores = [];
+  const corUserFav1 = prompt("Informe sua primeira cor favorita");
+  const corUserFav2 = prompt("Agora informe sua segunda cor favorita");
+  const corUserFav3 = prompt("Por fim, informe sua terceira cor favorita");
+
+  cores.push(corUserFav1, corUserFav2, corUserFav3);
+  console.log(cores);
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
+  return string.toUpperCase();
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
+  return custo / valorIngresso;
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
+  if (string1 === string2);
+  return true;
 }
 
 // EXERCÍCIO 09
@@ -99,6 +110,8 @@ function trocaPrimeiroEUltimo(array) {
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
+  let result = string1 || string2;
+  console.log(result);
 }
 
 // EXERCÍCIO 13
