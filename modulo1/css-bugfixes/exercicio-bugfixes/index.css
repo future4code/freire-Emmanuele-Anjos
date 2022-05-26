@@ -61,6 +61,7 @@ div img {
 }
 
 .container {
+  padding: 120px;
   height: 500px;
   text-align: center;
   margin: 0 auto;
@@ -138,7 +139,7 @@ td button:active {
 }
 
 #back-button {
-  margin: 0 auto;
+  margin-top: 200px;
   background-color: white;
   width: 100px;
   height: 20px;
