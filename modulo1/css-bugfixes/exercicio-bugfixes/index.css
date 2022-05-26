@@ -11,6 +11,10 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  text-align: center;
+}
+
 h2 {
   background-color: #fe7e02;
   padding: 10px 5px 10px 5px;
@@ -50,9 +54,6 @@ div img {
   border-radius: 5px;
   font-size: 20px;
   color: white;
-
-  justify-content: center;
-  align-items: center;
 }
 
 .botao-amarelo:hover {
@@ -137,6 +138,7 @@ td button:active {
 }
 
 #back-button {
+  margin: 0 auto;
   background-color: white;
   width: 100px;
   height: 20px;
