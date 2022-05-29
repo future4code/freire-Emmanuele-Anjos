@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/img/SOFI\ BG\ 01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+span {
+  color: blueviolet;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: blueviolet;
+  transition: 0.4s;
+}
+
+nav ul li a:active {
+  color: palevioletred;
+  transition: 0s;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+h4 {
+  color: white;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.about {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: black;
+}
+
+.about img {
+  height: auto;
+  width: 300px;
+}
+
+.about-text {
+  width: 500px;
+  color: white;
+}
+.main {
+  width: 950px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h2 {
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-text h5 {
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.projetos {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: black;
+}
+
+.projetos h2 {
+  color: white;
+  text-align: center;
+  font-size: 75px;
+  margin-bottom: 80px;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+
+.projetos img {
+  width: 240px;
+  justify-content: center;
+  align-items: center;
+}
