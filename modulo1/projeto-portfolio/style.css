@@ -76,17 +76,19 @@ h4 {
 .about {
   width: 100%;
   padding: 100px 0px;
-  background-color: black;
+  background-color: #141414;
 }
 
 .about img {
   height: auto;
   width: 300px;
+  margin-bottom: 90px;
 }
 
 .about-text {
   width: 500px;
   color: white;
+  padding-bottom: 90px;
 }
 .main {
   width: 950px;
@@ -110,23 +112,124 @@ h4 {
   text-transform: capitalize;
 }
 
-.projetos {
+.projeto {
+  background-color: black;
   width: 100%;
   padding: 100px 0px;
-  background-color: black;
-}
-
-.projetos h2 {
   color: white;
-  text-align: center;
-  font-size: 75px;
-  margin-bottom: 80px;
-  margin-top: 50px;
-  text-transform: capitalize;
 }
 
-.projetos img {
-  width: 240px;
+.title h2 {
+  font-size: 75px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.box {
+  display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 400px;
+}
+
+.card {
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: blueviolet;
+}
+
+h5 {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.pra p {
+  color: #fcfc;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+.card .button {
+  background-color: blueviolet;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.card .button:hover {
+  background-color: transparent;
+  border: 3px solid blueviolet;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: white;
+  margin-left: 12px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p:nth-child(1) {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border-radius: 50%;
+  margin: 22px 10px;
+  background: blueviolet;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+/* Botão voltar ao TOP*/
+.bt_top {
+  text-decoration: none;
+  color: aliceblue;
+  background-color: bisque;
+  position: fixed;
+  margin-left: 15;
 }
