@@ -1,15 +1,4 @@
-import React from "react";
-import styled from "styled-components";
-import Post from "./components/Post/Post";
-
-const MainContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-`;
-
-class App extends React.Component {
+export default class SecaoComentario extends Component {
   state = {
     postagem: [
       {
@@ -34,24 +23,22 @@ class App extends React.Component {
           "https://i.pinimg.com/originals/47/02/7e/47027ea0b972f76891551f5526f4d452.jpg",
       },
     ],
-    nomeUsuario: "",
-    fotoUsuario: "",
-    fotoPost: "",
+        nomeUsuario: "",
+        fotoUsuario: "",
+        fotoPost: ""
   };
-
-  render() {
-    const pastPost = this.state.postagem.map((postagem) => {
-      return (
-        <Post
-          key={postagem.nomeUsuario}
-          nomeUsuario={postagem.nomeUsuario}
-          fotoUsuario={postagem.fotoUsuario}
-          fotoPost={postagem.fotoPost}
+  
+  render () {
+    const oldPost = this.state.postagem.map (postagem) => {
+      return {
+        <Post key ={postagem.nomeUsuario}
+        nomeUsuario = {postagem.nomeUsuario}
+        fotoUsuario = {postagem.fotoUsuario}
+        fotoPost = {postagem.fotoPost}
         />
-      );
-    });
-    return <MainContainer>{pastPost}</MainContainer>;
+      }
+    }
   }
-}
+ return (<div>{oldPost}</div>)
 
-export default App;
+}
