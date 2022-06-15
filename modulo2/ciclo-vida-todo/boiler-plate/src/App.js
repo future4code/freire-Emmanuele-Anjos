@@ -36,13 +36,45 @@ class App extends React.Component {
 
   componentDidMount() {}
 
-  onChangeInput = (event) => {};
+  onChangeInput = (event) => {
+    this.setState({ inputValue: event.target.value });
+  };
 
-  criaTarefa = () => {};
+  criaTarefa = () => {
+    const novaTarefa = {
+      id: Date.now(),
+      texto: this.state.inputValue,
+      completa: false,
+    };
+    const copiaDoEstado = [...this.state.tarefas, novaTarefa];
+    this.setState({ tarefas: copiaDoEstado });
+    this.setState({ inputValue: "" });
+  };
 
-  selectTarefa = (id) => {};
+  selectTarefa = (id) => {
+    const { tarefas } = this.state;
 
-  onChangeFilter = (event) => {};
+    const novaListaDeTarefas = tarefas.map((tarefa) => {
+      if (tarefa.id === id) {
+        const novaTarefa = {
+          ...tarefa,
+          completa: !tarefa.completa,
+        };
+        return novaTarefa;
+      } else {
+        return tarefa;
+      }
+    });
+
+    this.saveOnLocalStorage(novaListaDeTarefas);
+    this.setState({
+      tarefas: novaListaDeTarefas,
+    });
+  };
+
+  onChangeFilter = (event) => {
+    this.setState({ filtro: event.target.value });
+  };
 
   render() {
     const listaFiltrada = this.state.tarefas.filter((tarefa) => {
@@ -67,7 +99,7 @@ class App extends React.Component {
 
         <InputsContainer>
           <label>Filtro</label>
-          <select value={this.state.filter} onChange={this.onChangeFilter}>
+          <select value={this.state.filtro} onChange={this.onChangeFilter}>
             <option value="">Nenhum</option>
             <option value="pendentes">Pendentes</option>
             <option value="completas">Completas</option>
