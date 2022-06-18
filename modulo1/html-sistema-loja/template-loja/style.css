@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+header {
+  font-size: 20px;
+  width: 100%;
+  background-color: #b56dad;
+}
+
+.pag-description {
+  color: #5103a3;
+  font-size: 20px;
+}
+
+body {
+  background: url("img/12b0176f911f2f0dd724c9716e893e41.jpg");
+}
+
+.footer-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+  background-color: #b56dad;
+}
