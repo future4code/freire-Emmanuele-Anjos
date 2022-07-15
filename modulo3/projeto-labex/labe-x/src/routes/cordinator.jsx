@@ -25,3 +25,7 @@ export const goToCreateTrip = (navigate) => {
 export const goToTripDetails = (navigate) => {
   navigate("/tripDetails");
 };
+
+export const goToBack = (navigate) => {
+  navigate(-1);
+};
