@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   goToTripDetails,
-  goToBack,
+  goBack,
   goToCreateTrip,
 } from "../../routes/cordinator";
 import { trips, setTrips, getTrips } from "axios";
@@ -25,7 +25,7 @@ const AdminHomePage = () => {
 
   const navigate = useNavigate();
 
-  const renderTrips = trips.map((item, index) => {
+  const renderTrips = trips.map((item) => {
     return (
       <button onClick={() => goToTripDetails(navigate)}>{item.name}</button>
     );
@@ -35,7 +35,7 @@ const AdminHomePage = () => {
     <div>
       <h1>Painel Administrativo</h1>
 
-      <button onClick={() => goToBack(navigate)}>Voltar</button>
+      <button onClick={() => goBack(navigate)}>Voltar</button>
       <button onClick={() => goToCreateTrip(navigate)}>Criar Viagem</button>
       <button>Logout</button>
     </div>
