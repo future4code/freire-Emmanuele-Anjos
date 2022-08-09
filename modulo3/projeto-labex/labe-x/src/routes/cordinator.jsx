@@ -11,7 +11,7 @@ export const goToApplicationForm = (navigate) => {
 };
 
 export const goToLogin = (navigate) => {
-  navigate("/applicationForm");
+  navigate("/login");
 };
 
 export const goToAdminHome = (navigate) => {
@@ -26,6 +26,6 @@ export const goToTripDetails = (navigate) => {
   navigate("/tripDetails");
 };
 
-export const goToBack = (navigate) => {
+export const goBack = (navigate) => {
   navigate(-1);
 };
