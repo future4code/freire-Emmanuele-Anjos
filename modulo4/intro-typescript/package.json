@@ -7,7 +7,7 @@
     "start": "node ./index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sofia Anjos",
   "license": "ISC",
   "dependencies": {
     "typescript": "^4.4.4"
