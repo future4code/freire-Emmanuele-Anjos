@@ -1,0 +1,11 @@
+{
+  "name": "exercicio-1",
+  "version": "1.0.0",
+  "description": "exercício 1 node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "Emmanuele Sofia",
+  "license": "ISC"
+}
