@@ -13,3 +13,15 @@ const printDate = (name: string, date: string) => {
 printDate("Sofia", "30/04/2000");
 
 //exercício 2
+
+function randomType(data: any): void {
+  console.log(typeof data);
+}
+
+const type1 = "actias luna";
+const type2 = false;
+const type3 = 333;
+
+randomType(type1);
+randomType(type2);
+randomType(type3);
