@@ -53,3 +53,5 @@ console.log(printCatalogue("A Brighter Summer Day", 1991, GENERO.DRAMA));
 
 /* ex Entradas: "Duna", 2021, GENERO.ACAO
 Saída: {nome: "Duna", anoLancamento: 2021, genero: "ação"}*/
+
+//exercício 3
