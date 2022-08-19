@@ -14,6 +14,7 @@ const server = app.listen(process.env.PORT || 3003, () => {
     console.error(`Failure upon starting server.`);
   }
 });
+//exercício 1
 
 app.get("/ping", (req, res) => {
   res.send("Pong! 🏓");
