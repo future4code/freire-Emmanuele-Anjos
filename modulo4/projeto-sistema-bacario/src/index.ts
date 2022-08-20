@@ -1,20 +1,30 @@
-import express from "express";
-
-import { AddressInfo } from "net";
+import express, { Express, Request, Response } from "express";
+import cors from "cors";
+import { accounts } from "./accounts";
 
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
-const server = app.listen(process.env.PORT || 3003, () => {
-  if (server) {
-    const address = server.address() as AddressInfo;
-    console.log(`Server is running in http://localhost:${address.port}`);
-  } else {
-    console.error(`Failure upon starting server.`);
-  }
+app.post("users/accounts", (req: Request, res: Response) => {
+  try {
+    const { name, CPF, dateOfBirth } = req.body;
+
+    const [day, month, year] = dateOfBirth.split("/");
+
+    const getBirthDate: Date = new Date();
+
+    accounts.push({
+      name: name,
+      CPF: CPF,
+      dateOfBirth,
+      balance: 0,
+      statement: [],
+    });
+  } catch (error) {}
 });
 
-// app.get("/bank", (req, res) => {
-//   res.send("Test bank");
-// });
+app.listen(3003, () => {
+  console.log("app is running");
+});
