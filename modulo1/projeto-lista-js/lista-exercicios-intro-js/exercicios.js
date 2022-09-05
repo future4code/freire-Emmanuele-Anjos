@@ -28,7 +28,7 @@ function calculaAreaRetangulo() {
     )
   );
   let area = altura * largura;
-  console.log(`a area do triângulo é equivalente a: ${area}`);
+  console.log(area);
 }
 
 // EXERCÍCIO 02
@@ -39,7 +39,7 @@ function imprimeIdade() {
   let anoDeNascimento = Number(prompt("agora digite o ano de seu nascimento"));
 
   let idade = anoAtual - anoDeNascimento;
-  console.log(`sua idade atual é: ${idade}`);
+  console.log(idade);
 }
 
 // EXERCÍCIO 03
@@ -50,13 +50,13 @@ function calculaIMC(peso, altura) {
 }
 
 // EXERCÍCIO 04
-function imprimeInformacoesUsuario() {
+function imprimeInformacoesUsuario(nome, idade, email) {
   // implemente sua lógica aqui
-  let name = prompt("informe seu nome");
-  let age = prompt("agora informe sua idade");
+  let nome = prompt("informe seu nome");
+  let idade = Number(prompt("informe sua idade"));
   let email = prompt("por ultimo, informe seu email");
   console.log(
-    `Meu nome é ${name}, tenho ${age} anos, e o meu email é ${email}`
+    `Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}`
   );
   // "Meu nome é NOME, tenho IDADE anos, e o meu email é EMAIL."
 }
@@ -64,42 +64,50 @@ function imprimeInformacoesUsuario() {
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
-  const cores = [];
-  const corUserFav1 = prompt("Informe sua primeira cor favorita");
-  const corUserFav2 = prompt("Agora informe sua segunda cor favorita");
-  const corUserFav3 = prompt("Por fim, informe sua terceira cor favorita");
+  cor1 = prompt("Informe sua primeira cor favorita");
+  cor2 = prompt("Agora informe sua segunda cor favorita");
+  cor3 = prompt("Por fim, informe sua terceira cor favorita");
 
-  cores.push(corUserFav1, corUserFav2, corUserFav3);
+  const cores = [cor1, cor2, cor3];
   console.log(cores);
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-  return string.toUpperCase();
+  upperString = string.toUpperCase();
+  console.log(upperString);
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
-  return custo / valorIngresso;
+  let resultado = custo / valorIngresso;
+  return resultado;
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-  if (string1 === string2);
-  return true;
+  if (string1 === string2) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
+  let elemento = array[0];
+  return elemento;
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
+  let ultimo = array.pop();
+  return ultimo;
 }
 
 // EXERCÍCIO 11
