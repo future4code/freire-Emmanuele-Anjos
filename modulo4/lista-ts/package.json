@@ -1,0 +1,15 @@
+{
+  "name": "lista-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node ./build/index.js"
+  },
+  "keywords": [],
+  "author": "Sofia Anjos",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.4.4"
+  }
+}
